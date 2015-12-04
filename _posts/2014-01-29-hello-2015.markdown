@@ -21,9 +21,7 @@ tags:
 > 3) Big data
 > 4) IOS
 > 5) Algorithms                                                                                                                                                                                                                        
-> If you interested in some options above, you've come to the right place! Otherwise,
-> I'll tell you that you exactly have come to the wrong place.So, I'll share python,c,big data,ios and algorithms but mostly   > python posts about big data as far as in me lies. While I'm writing to this blog post, the mac os el capitan is installing on
-> virtual box so in the coming days I'm planning to start sharing my ios experience.
+> " If you interested in some options above, you've come to the right place! Otherwise,I'll tell you that you exactly have come to the wrong place.So, I'll share python,c,big data,ios and algorithms but mostly python posts about big data as far as in me lies. While I'm writing to this blog post, the mac os el capitan is installing on virtual box so in the coming days I'm planning to start sharing my ios experience."
 
 
 
