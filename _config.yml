@@ -52,16 +52,16 @@ disqus_username: yasintoy
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: yasintoy.github.io
+ga_track_id: 'UA-71030690-1'            # Format: UA-xxxxxx-xx
+ga_domain: www.yasintoy.com
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Python,C,IOS,Javascript,Html,Css"
+sidebar-about-description: "Python,C/C++,IOS,Javascript,Php"
 sidebar-avatar: /img/sidebarAvatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
