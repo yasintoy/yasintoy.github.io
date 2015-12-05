@@ -4,7 +4,7 @@ title  	  : "How To Make Twitter Data Analysis"
 subtitle  : "Data analysis and virtualize With Python"
 author    : "Yasin Toy"
 date 	  : 2015-12-05   14:37:00
-header-img: "img/twitterAnalysis.jpg"
+header-img: "img/in-post/twitterAnalysis.jpg"
 tags:
 	- TwitterAnalysis
 	- Analysis
@@ -105,6 +105,12 @@ class MyListener(StreamListener):
 > I tried and it gave me this result ![img](img/in-post/tweetsResult.png). 
 </br>
 As you can see above it works.So,in part-2 I'm going to show How to Analysis this tweets.json file and virtualize.
+
+
+
+
+
+
 	
 
 
