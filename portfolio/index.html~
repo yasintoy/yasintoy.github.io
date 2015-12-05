@@ -1,0 +1,132 @@
+---
+title: Portfolio
+layout: default
+---
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Yasin - Timeline</title>
+		<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container" style="margin:0;padding:0;width:100%;">
+			<header>
+				<img width="190" height="190" src="images/me2.jpg">
+				<h1>Yasin Toy</h1>
+				<p>A student major in Python & Mobile,<br>
+					focus on data science, recommendation systems and mobile apps.</p>
+			</header>
+			<div class="main">
+				<ul class="cbp_tmtimeline">
+				
+					 <li>
+						<div class="cbp_tmlabel">
+							<h2 id="busyweek">Twitter User Analysis</h2>
+							<time>2015.02</time>
+							<img src="images/twitterAnalysis.png">
+							<ul>
+								<li>
+									I build a twitter user analysis which provide us enter a twitter username and analysis tweets,locations,hastags etc. of this users by using the Python.Then, it created a html file about all information.
+								</li>
+								<li class="skill">
+									<span class="cbp_tmicon-html"></span>
+									<span><b>Python</b></span>
+								
+									<span class="link"><a target="_blank" href="http://huangxuan.me/BusyWeek/dist/">Try it</a></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+				
+				
+				
+				
+					<li>
+						<div class="cbp_tmlabel">
+							<h2 id="boxoffice"> Vinalize.com @vinalize</h2>
+							<time>2015.05</time>
+							<img src="images/vinalize.png">
+							<ul>
+								<li>
+									vinalize.com is my first startup but unfortunately it failed because of some reasons. I opened this website last year and in my view it was so good.While I was creating it I learned many things such as yii framework,php,css,bootstrap etc.Vinalize was providing to user connect to their friends,colleagues,family etc.
+								</li>
+								<li class="skill">
+									<span class="cbp_tmicon-html"></span>
+									<span><b>JS</b></span>
+									<span><b>PHP</b></span>
+									<span class="i-react"></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+
+
+
+
+
+					
+					<!--<li>
+						<div class="cbp_tmlabel">
+							<h2>SENOVA WebApp</h2>
+							<img src="images/senova.jpg">
+							<ul>
+								<li>《多媒体交互设计一》结课作业，以北汽“绅宝”为目标品牌，iPad 为主要平台进行的 App 设计，旨在用一种可交互的方式介绍“绅宝”车型。完全采用 Html5 技术开发，可添加至主屏幕离线运行。着力于触控交互体验的优化与优雅的动画设计。</li>
+								<li>Responsible : Front-End，Interaction，Product</li>
+								<li>Partner : ZOE-张瑜</li>
+								<li class="skill">
+									<span class="cbp_tmicon-html"></span>
+									<span class="fa fa-css3"></span>
+									<span><b>JS</b></span>
+									<span class="link"><a target="_blank" href="http://huangxuan.me/senova/">Link</a></span>
+								</li>
+							</ul>
+						</div>
+					</li>-->
+
+
+
+					{% if site.duoshuo_username %}
+					<li>
+						<div class="cbp_tmlabel">
+			                <!-- 多说评论框 start -->
+			                <div class="comment">
+			                    <div class="ds-thread"
+									data-thread-key="{{site.duoshuo_username}}/portfolio"
+			                        data-title="{{page.title}}"
+			                        data-url="{{site.url}}{{site.baseurl}}{{page.url}}" >
+			                    </div>
+			                </div>
+			                <!-- 多说评论框 end -->
+						</div>
+					</li> 
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+		{% if site.duoshuo_username %}
+		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+		    // dynamic User by Hux
+		    var _user = '{{site.duoshuo_username}}';
+
+		    // duoshuo comment query.
+		    var duoshuoQuery = {short_name: _user };
+		    (function() {
+		        var ds = document.createElement('script');
+		        ds.type = 'text/javascript';ds.async = true;
+		        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		        ds.charset = 'UTF-8';
+		        (document.getElementsByTagName('head')[0]
+		         || document.getElementsByTagName('body')[0]).appendChild(ds);
+		    })();
+		</script>
+		<!-- 多说公共JS代码 end -->
+		{% endif %}
+	</body>
+</html>
