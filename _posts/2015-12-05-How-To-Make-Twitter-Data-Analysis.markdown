@@ -1,18 +1,15 @@
 ---
-layout 	  :  post
-title  	  : "How To Make Twitter Data Analysis"
-subtitle  : "Data analysis and virtualize With Python"
-author    : "Yasin Toy"
-date 	  : 2015-12-05 14:37:00
-header-img: "../img/in-post/twitterAnalysis.jpg"
+layout:     post
+title:      "How To Make Twitter Data Analysis"
+subtitle:   "Data analysis and virtualize With Python"
+date:       2015-12-05 12:00:00
+author:     "Yasin Toy"
+header-img: "img/in-post/twitterAnalysis.jpg"
 tags:
-	- TwitterAnalysis
-	- Analysis
-	- Big Data
-	- Data Virtualize
-	- Python
-	- Tweepy
+    - Python
+    - Twitter Analysis
 ---
+
 
 > I never guess. It is a capital mistake to theorize before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts.
 Sir Arthur Conan Doyle, Author of Sherlock Holmes stories
