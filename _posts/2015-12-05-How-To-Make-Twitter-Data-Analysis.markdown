@@ -16,15 +16,15 @@ Sir Arthur Conan Doyle, Author of Sherlock Holmes stories
 
 # How to Make Twitter Analysis and Virtualize to Data? (Part-1 Collecting Data With Python)
 
-	In Data Science, collecting data is the most important part and we can collect data from [facebook](http://www.facebook.com),[Yelp](http://www.yelp.com),[twitter](http://www.twitter.com),[linkedin](http://wwww.linkedin.com) etc.So,in this post I decided to twitter for collecting data because twitter provide us some useful features about data analysis and I think the best useful feature is all tweets can be maximum 140 characters and it's help us about summarize.On the other hand,twitter is one of the most popular social media in the world and every day more than 300 milyon people visit there.Anyway,I think this introductory sentence is enough so let's start.
+> In Data Science, collecting data is the most important part and we can collect data from [Facebook](http://www.facebook.com),[Yelp](http://www.yelp.com),[Twitter](http://www.twitter.com),[Linkedin](http://wwww.linkedin.com) etc.So,in this post I decided to twitter for collecting data because twitter provide us some useful features about data analysis and I think the best useful feature is all tweets can be maximum 140 characters and it's help us about summarize.On the other hand,twitter is one of the most popular social media in the world and every day more than 300 milyon people visit there.Anyway,I think this introductory sentence is enough so let's start.
 	
 ## Take a Twitter API Account
 	
-   To access Twitter we have to create a new account from [twitter Api](https://apps.twitter.com/).Enter this website link and click the 'Create New App' and it'll give us like this page ![img](/img/in-post/createApplicationPage.png).
+   To access Twitter we have to create a new account from [twitter Api](https://apps.twitter.com/).Enter this website link and click the 'Create New App' and it'll give us like this page : ![img](/img/in-post/createApplicationPage.png).
  
 > Name 		  -> Write a name whatever you want.This only shows in twitter app page
-> Description -> Write a something like this **Data Analysis Demo**
-> Website     -> Write **localhost**
+> Description 	  -> Write a something like this **Data Analysis Demo**
+> Website         -> Write **localhost**
 
    It finished and the last but not the least, keep your **consumer_key**, **consumer_secret**, **access_token**,**access_secret_token** in your text editor because we'll need to these information while we're accessing to Twitter API with Python.
 
@@ -34,12 +34,11 @@ Sir Arthur Conan Doyle, Author of Sherlock Holmes stories
 	In order to do this, we need to [tweepy library](http://www.tweepy.org/).
 > You can install throuh two ways
 1) ``` sudo pip install tweepy ```
-2) ``` git clone https://github.com/tweepy/tweepy.git
-	   cd tweepy
-	   python setup.py install 
+2) ```  git clone https://github.com/tweepy/tweepy.git -> cd tweepy -> python setup.py install```	   
+	    
    ```
 **Python 2.6 and 2.7, 3.3, 3.4 & 3.5 are supported.**
-
+  ```
 
 ## Let's Start Writing Our Python Codes
 
@@ -58,21 +57,21 @@ Sir Arthur Conan Doyle, Author of Sherlock Holmes stories
 
 	 CONSUMER_KEY    	      = "fill out here"
 	 CONSUMER_SECRET	      = "fill out here"
-	 ACCESS_TOKEN    	  	  = "fill out here"
-	 ACCESS_TOKEN_SECRET  	  = "fill our here" 
+	 ACCESS_TOKEN    	      = "fill out here"
+	 ACCESS_TOKEN_SECRET  	      = "fill our here" 
 ```
 
 	 Ultimately, we provide all information to access Twitter api and now let's access
 	
-```
+```python
 	 key = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
 	 key.set_access_token(ACCESS_TOKEN,ACCESS_TOKEN_SECRET)
 
 ```
 
-	We accessed to our Twitter API.Now,we're going to create a class for collect data.This class includes two function called **on_data**, **on_error** . Hence the name, on_data function works if retrieve data from the twitter but it's not on_error function will work. In on_data function, we'll keep all tweet in **tweets.json** file in order to analysis.
+> We accessed to our Twitter API.Now,we're going to create a class for collect data.This class includes two function called **on_data**, **on_error** . Hence the name, on_data function works if retrieve data from the twitter but it's not on_error function will work. In on_data function, we'll keep all tweet in **tweets.json** file in order to analysis.
 
-```
+```python
 class MyListener(StreamListener):
  
     def on_data(self, data):
@@ -90,18 +89,17 @@ class MyListener(StreamListener):
 
 ```
 
-	Finally, we're going collect tweets about We'll define with **twitter_stream.filter** function into data.json file by using twitter Stream().You can write whatever you want into track = [] . It's like twitter search engine.
+> Finally, we're going collect tweets about We'll define with **twitter_stream.filter** function into data.json file by using twitter Stream().You can write whatever you want into track = [] . It's like twitter search engine.
 	
-```	
+```python	
 	twitter_stream = Stream(key, MyListener())
 	twitter_stream.filter(track=['#chelsea','#manu','#liverpool','#everton'],languages=['en']) 
 	
 	
 ```
 
-> I tried and it gave me this result ![img](img/in-post/tweetsResult.png). 
-</br>
-As you can see above it works.So,in part-2 I'm going to show How to Analysis this tweets.json file and virtualize.
+I tried and it gave me this result  </br>![img](/img/in-post/tweetsResult.png). 
+</br>As you can see above it works.So,in part-2 I'm going to show How to Analysis this tweets.json file and virtualize.
 
 
 
