@@ -31,7 +31,7 @@ Sir Arthur Conan Doyle, Author of Sherlock Holmes stories
 
 ## Access to Twitter API With Python
 
-	In order to do this, we need to [tweepy library](http://www.tweepy.org/).
+> In order to do this, we need to [tweepy library](http://www.tweepy.org/).
 > You can install throuh two ways
 1) ``` sudo pip install tweepy ```
 2) ```  git clone https://github.com/tweepy/tweepy.git -> cd tweepy -> python setup.py install```	   
