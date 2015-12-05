@@ -4,7 +4,7 @@ title:      "How To Make Twitter Data Analysis"
 subtitle:   "Data analysis and virtualize With Python"
 date:       2015-12-05 12:00:00
 author:     "Yasin Toy"
-header-img: "img/in-post/twitterAnalysis.jpg"
+header-img: "img/twitterAnalysis.jpg"
 tags:
     - Python
     - Twitter Analysis
